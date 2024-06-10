@@ -226,7 +226,7 @@ template void fitEllipse(std::vector<cctag::Point2d<Eigen::Vector3f>>::const_ite
 } // geometry
 
 float innerProdMin(const std::vector<cctag::EdgePoint*>& filteredChildren, float thrCosDiffMax, Point2d<Vector3s> & p1, Point2d<Vector3s> & p2) {
-            using namespace boost::numeric;
+            //using namespace boost::numeric;
             //using namespace cctag::numerical;
 
             EdgePoint* pAngle1 = nullptr;
@@ -335,7 +335,7 @@ void ellipseFitting( cctag::numerical::geometry::Ellipse& e, const std::vector<c
 }
 
 void circleFitting(cctag::numerical::geometry::Ellipse& e, const std::vector<cctag::EdgePoint*>& points) {
-  using namespace boost::numeric;
+  // using namespace boost::numeric;
 
   std::size_t nPoints = points.size();
 
